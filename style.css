@@ -26,7 +26,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 60vh;
-    /* padding: 20px; */
     position: relative;
     margin:  100px 0;
 }
@@ -130,6 +129,35 @@ i {
     font-size: 15px; 
 }
 
+@media only screen and (max-width:1024px){
+    html,body,main,footer,.container{
+        width: 100%;
+    }
+    .container{
+        background-image: url(images/pattern-bg.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 40%;
+        background-size: 600px;
+    }
+
+    .image,.text{
+        width: 50%;
+        height: 70%;
+    }
+
+    #quote {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    body {
+        background-image: url(images/pattern-curve.svg);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+
+
+}
+
 
 @media only screen and (max-width:600px){
     html,body,main,footer,.container{
@@ -146,6 +174,7 @@ i {
         flex-direction: column-reverse;
         gap: 70px;
         height: auto;
+        background-image: none;
     }
 
     .text,.image{
